@@ -1,0 +1,53 @@
+//
+//  Movie.pch
+//  影讯百科
+//
+//  Created by g1game on 16/8/25.
+//  Copyright © 2016年 AlexanderYe. All rights reserved.
+//
+
+#ifndef Movie_pch
+#define Movie_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+#import "MovieNetInterface.h"
+/** 设置宽高 */
+#define kScreenW [UIScreen mainScreen].bounds.size.width
+#define kScreenH [UIScreen mainScreen].bounds.size.height
+#define kCellHeight kScreenH * 0.177
+
+/** 设置颜色 */
+#define kRGBAColor(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]
+
+#define kRandomColor [UIColor colorWithRed:arc4random_uniform(256)/255.0 green:arc4random_uniform(256)/255.0 blue:arc4random_uniform(256)/255.0 alpha:1.0]
+/** 设置图片 */
+#define SKImage(name) [UIImage imageNamed:name]
+/** 获取沙盒 Cache */
+#define kPathCache [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject]
+#define kMainColor [UIColor colorWithRed:68/255.0f green:203/255.0f blue:255/255.0f alpha:1]
+
+
+#define kRGBColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+/** 主页cell封面的高度*/
+#define kFaceHeight kScreenH * 0.177 * 0.84
+
+#define MAS_SHORTHAND
+#define MAS_SHORTHAND_GLOBALS
+#import <Masonry.h>
+
+#import <MJExtension.h>
+
+#import <AFNetworking.h>
+
+#import <SDWebImage/UIImageView+WebCache.h>
+
+#import <SVProgressHUD.h>
+
+#import <MJRefresh.h>
+/** 输出打印 */
+#define SKLog(...) NSLog(@"%s\n %@ \n\n",__func__,[NSString stringWithFormat:__VA_ARGS__])
+
+#endif /* Movie_pch */

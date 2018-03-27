@@ -1,0 +1,36 @@
+{
+  "images" : [
+    {
+      "size" : "36x36",
+      "idiom" : "android",
+      "filename" : "mza_2503692610521999510AndroidIcon_36pt.png",
+      "resolution" : "ldpi 36pt",
+      "scale" : "1x"
+    },
+    {
+      "size" : "36x36",
+      "idiom" : "android",
+      "filename" : "mza_2503692610521999510AndroidIcon_36pt@1.3x.png",
+      "resolution" : "mdpi 48pt",
+      "scale" : "1.3x"
+    },
+    {
+      "size" : "36x36",
+      "idiom" : "android",
+      "filename" : "mza_2503692610521999510AndroidIcon_36pt@2x.png",
+      "resolution" : "hdpi 72pt",
+      "scale" : "2x"
+    },
+    {
+      "size" : "36x36",
+      "idiom" : "android",
+      "filename" : "mza_2503692610521999510AndroidIcon_36pt@2.7x.png",
+      "resolution" : "xhdpi 96pt",
+      "scale" : "2.7x"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}
